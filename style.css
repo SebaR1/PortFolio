@@ -1,9 +1,43 @@
 h1 {
-  font-size: 3rem !important;
+  font-size: 3rem;
 }
 
-.navicons > a {
+.allview {
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg-nav {
+  background-color: #000305;
+}
+.size-nav {
+  width: 100vw;
+}
+
+.links-nav {
+  color: #fff;
+}
+
+.icons {
   text-decoration: none;
   font-size: 50px;
-  color: black;
+  color: #fff;
+}
+
+.icons :hover {
+  color: #1561f0;
+}
+
+body {
+  background-color: #212121;
+  color: #fff;
+}
+
+main {
+  background: url(img/lineasdecodigo.png) center;
+}
+
+.wrap {
+  box-shadow: 0px 0px 25px #222;
+  backdrop-filter: blur(7.5px);
 }

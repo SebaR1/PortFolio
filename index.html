@@ -24,10 +24,13 @@
   <body>
     <!--     Encabezado     -->
     <header class="sticky-top position-fixed size-nav">
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-nav">
+        <div class="container-fluid size-nav2">
+          <a class="navbar-brand m-0" href="#acercaDeMi">
+            <img src="img/logo2.png" alt="argprograma" />
+          </a>
           <button
-            class="navbar-toggler ms-auto"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#menu"
@@ -37,43 +40,47 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item icons">
+          <div class="collapse navbar-collapse icons" id="menu">
+            <ul class="navbar-nav me-auto mx-4">
+              <li class="nav-item">
                 <a class="nav-link links-nav" href="#acercaDeMi"
                   >Acerca de mi</a
                 >
               </li>
-              <li class="nav-item icons">
+              <li class="nav-item">
                 <a class="nav-link links-nav" href="#experiencia"
                   >Experiencia</a
                 >
               </li>
-              <li class="nav-item icons">
-                <a class="nav-link links-nav" href="#educacion">Educación</a>
+              <li class="nav-item">
+                <a class="nav-link links-nav" href="#educacion">Educacion</a>
               </li>
-              <li class="nav-item icons">
+              <li class="nav-item">
                 <a class="nav-link links-nav" href="#habilidades"
                   >Habilidades</a
                 >
               </li>
-              <li class="nav-item icons">
+              <li class="nav-item">
                 <a class="nav-link links-nav" href="#proyectos">Proyectos</a>
               </li>
             </ul>
-            <ul class="navbar-nav flex-row flex-wrap text-light border-top">
-              <a href="" class="nav-item col-6 col-md-auto p-3 icons">
-                <div>
-                  <i class="fa-brands fa-github"></i>
-                  <small class="d-md-none ms-2">GitHub</small>
-                </div>
-              </a>
-              <a href="" class="nav-item col-6 col-md-auto p-3 icons">
-                <div>
-                  <i class="fa-brands fa-linkedin"></i>
-                  <small class="d-md-none ms-2">Linkedin</small>
-                </div>
-              </a>
+            <ul class="navbar-nav flex-row flex-wrap text-light">
+              <li class="nav-item col-6 col-md-auto p-3">
+                <a class="links-nav navicons" href="">
+                  <div class="navicons">
+                    <i class="fa-brands fa-square-github"></i>
+                    <small class="d-md-none ms-2">GitHub</small>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item col-6 col-md-auto p-3">
+                <a class="links-nav navicons" href="">
+                  <div class="navicons">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <small class="d-md-none ms-2">Linkedin</small>
+                  </div>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -81,25 +88,38 @@
     </header>
     <!--     Acerca De Mi     -->
     <main id="acercaDeMi">
-      <div class="wrap">
-        <div
-          class="d-flex justify-content-center align-items-center container allview"
-        >
-          <div class="">
-            <h1>Hola, soy Sebastian Romero!</h1>
-            <p class="h5">
-              Soy programador fullstack, estudiando la carrera de Ingenieria en
-              Sistemas en la UTN. Ex Contador Publico.
-            </p>
-          </div>
-          <div class="">
-            <img src="img/perfil.png" alt="imagen1" />
-          </div>
-          <div class="">
-            <a href="#experiencia"
-              ><h2 class="icons">
-                <i class="ms-5 fa-solid fa-chevron-down"></i></h2
-            ></a>
+      <div class="wrap" style="">
+        <div class="row m-auto allview container pt-5">
+          <div class="m-auto row">
+            <div
+              class="col-lg-3 d-flex justify-content-center align-items-center"
+            >
+              <img
+                class="fotoperfil circle mb-5"
+                src="img/foto perfil.jpeg"
+                alt="imagen1"
+              />
+            </div>
+            <div
+              class="col-lg-9 justify-content-center align-items-center d-flex"
+            >
+              <div>
+                <h1 class="display-3">Hola, soy Sebastian Romero!</h1>
+                <p class="h4 pb-5">
+                  Soy programador fullstack, estudiando la carrera de Ingenieria
+                  en Sistemas en la UTN. Ex Contador Publico.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 text-center pt-2">
+              <h3 class=""><i class="fa-phone fa-solid"> </i> +541140659699</h3>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 text-center pt-2">
+              <h3>
+                <i class="fa-envelope fa-solid"> </i>
+                romerosebastian781@gmail.com
+              </h3>
+            </div>
           </div>
         </div>
       </div>
@@ -107,16 +127,9 @@
     <!--     Experiencia     -->
     <section class="py-4" id="experiencia">
       <div class="container py-3 mt-5">
-        <div class="d-flex justify-content-center align-items-center mb-5">
-          <img
-            class="fotoexperiencia mx-5 circle"
-            src="img/fotoexperiencia.png "
-            alt=""
-          />
-          <h2 class="mx-5">Experiencia</h2>
-          <a class="mx-5 circle" href=""
-            ><i class="fa-solid fa-plus icons"></i
-          ></a>
+        <div class="row mb-5">
+          <h2 class="">Experiencia</h2>
+          <div class="">asd</div>
         </div>
         <div class="card text-bg-dark my-2">
           <div class="card text-bg-dark">
@@ -513,9 +526,57 @@
         </div>
       </div>
     </section>
+    <!--     Contacto     -->
     <section class="py-4" id="contacto">
-      <div class="py-3 mt-5"></div>
+      <div
+        class="py-3 mt-5 d-flex align-items-center justify-content-center flex-wrap"
+      >
+        <div class="mx-5">
+          <h3><i class="fa-phone fa-solid"> </i> +541140659699</h3>
+        </div>
+        <div class="mx-5">
+          <h3>
+            <i class="fa-envelope fa-solid"> </i> romerosebastian781@gmail.com
+          </h3>
+        </div>
+      </div>
     </section>
+    <div class="row g-4 container-fluid w-75 mx-auto">
+      <h4 class="text-center pt-4">Técnicas</h4>
+      <div class="col-4">
+        <div class="text-center">
+          <div class="progress-circle progress-95">
+            <span class="pt-1"
+              ><i class="fa-2x mt-4 pt-s fa-brands fa-html5"></i
+            ></span>
+          </div>
+          <h6 class="mt-1">HTML</h6>
+          <p>95%</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="text-center">
+          <div class="progress-circle progress-95">
+            <span class="pt-1"
+              ><i class="fa-2x mt-4 pt-s fa-bootstrap fa-brands"></i
+            ></span>
+          </div>
+          <h6 class="mt-1">Bootstrap</h6>
+          <p>95%</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="text-center">
+          <div class="progress-circle progress-95">
+            <span class="pt-1"
+              ><i class="fa-2x mt-4 pt-s fa-bootstrap fa-brands"></i
+            ></span>
+          </div>
+          <h6 class="mt-1">Bootstrap</h6>
+          <p>95%</p>
+        </div>
+      </div>
+    </div>
     <!--    Footer    -->
     <footer>
       <div class="container py-4">

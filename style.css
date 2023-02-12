@@ -1,3 +1,12 @@
+body {
+  background-color: #212121;
+  color: #fff;
+}
+
+main {
+  background: url(img/lineasdecodigo.png) center;
+}
+
 .allview {
   height: 100vh;
 }
@@ -5,9 +14,11 @@
 .bg-nav {
   background-color: #000305;
 }
+
 .size-nav {
   width: 100vw;
 }
+
 .size-nav2 {
   width: 90vw;
 }
@@ -31,6 +42,25 @@
   color: #1561f0;
 }
 
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
 .fotoperfil {
   height: 15em;
 }
@@ -39,23 +69,13 @@
   background-color: #000305;
 }
 
-body {
-  background-color: #212121;
-  color: #fff;
-}
-
-main {
-  background: url(img/lineasdecodigo.png) center;
-}
-
 .wrap {
   box-shadow: 0px 0px 25px #222;
   backdrop-filter: blur(7.5px);
 }
 
 .fotoexperiencia {
-  width: 180px;
-  height: 180px;
+  width: 20rem;
 }
 
 .circle {
@@ -68,8 +88,18 @@ main {
 }
 
 .fotoedu {
-  width: 230px;
+  width: 19rem;
 }
+
+.sub_hw {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  -webkit-text-stroke: 0.02em black;
+  text-shadow: 0.04em 0.04em 0.04em rgb(0, 0, 0);
+}
+
+/* Habilidades */
 
 .progress-circle {
   position: relative;
@@ -78,8 +108,9 @@ main {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-color: #212529;
+  background-color: #212121;
 }
+
 .progress-circle:after {
   content: "";
   display: inline-block;
@@ -91,7 +122,7 @@ main {
 }
 .progress-circle span {
   font-size: 1rem;
-  color: #8b8b8b;
+  color: #fff;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -103,26 +134,25 @@ main {
   margin-top: -45px;
   text-align: center;
   border-radius: 50%;
-  background: #212529;
+  background: #212121;
   z-index: 1;
 }
 .progress-circle span:after {
-  content: "%";
   font-weight: 600;
-  color: #8b8b8b;
+  color: #fff;
 }
 
 .progress-circle.progress-95:after {
   background-image: linear-gradient(
       72deg,
-      #000305 50%,
+      #000000 50%,
       transparent 50%,
       transparent
     ),
-    linear-gradient(270deg, #000305 50%, #ebebeb 50%, #ebebeb);
+    linear-gradient(270deg, #000000 50%, #3b3b3b 50%);
 }
 
-@-webkit-keyframes colorload {
+@keyframes colorload {
   0% {
     opacity: 0;
     transform: rotate(0deg);
@@ -132,3 +162,4 @@ main {
     transform: rotate(360deg);
   }
 }
+/* Habilidades */
